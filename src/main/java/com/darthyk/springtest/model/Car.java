@@ -33,4 +33,7 @@ public class Car {
 
     @ManyToMany(cascade = CascadeType.ALL)
     private List<Box> boxes;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private Order order;
 }

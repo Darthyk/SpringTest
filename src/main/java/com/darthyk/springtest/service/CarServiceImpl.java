@@ -5,10 +5,14 @@ import com.darthyk.springtest.model.Car;
 import com.darthyk.springtest.model.User;
 import com.darthyk.springtest.repository.CarRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-@Service
 public class CarServiceImpl implements CarService {
+
+    public CarServiceImpl(CarRepository carRepository, UserService userService) {
+        this.repository = carRepository;
+        this.userService = userService;
+    }
+
     @Autowired
     private CarRepository repository;
     @Autowired
@@ -21,5 +25,9 @@ public class CarServiceImpl implements CarService {
         car.setUser(user);
         repository.save(car);
         return carDto;
+    }
+
+    @Override public Car getCarById(Long id) {
+        return repository.getCarById(id);
     }
 }

@@ -1,10 +1,12 @@
 package com.darthyk.springtest.repository;
 
 import com.darthyk.springtest.model.Car;
+import com.darthyk.springtest.model.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CarRepository extends JpaRepository<Car, Long> {
-    Car getCarById(Long id);
+public interface OrderRepository extends JpaRepository<Order, Long> {
+    Order getOrderById(Long id);
+    Order findOrderByCar(Car car);
 }

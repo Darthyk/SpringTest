@@ -8,17 +8,18 @@ import com.darthyk.springtest.model.Car;
 import com.darthyk.springtest.model.Document;
 import com.darthyk.springtest.model.User;
 import com.darthyk.springtest.repository.UserRepository;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-@Service
 @Slf4j
 public class UserServiceImpl implements UserService {
+
+    public UserServiceImpl(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     @Autowired
     private UserRepository userRepository;
