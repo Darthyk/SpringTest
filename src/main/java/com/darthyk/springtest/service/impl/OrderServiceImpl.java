@@ -1,10 +1,13 @@
-package com.darthyk.springtest.service;
+package com.darthyk.springtest.service.impl;
 
 import com.darthyk.springtest.model.Car;
 import com.darthyk.springtest.model.Order;
 import com.darthyk.springtest.model.Status;
 import com.darthyk.springtest.model.User;
 import com.darthyk.springtest.repository.OrderRepository;
+import com.darthyk.springtest.service.CarService;
+import com.darthyk.springtest.service.OrderService;
+import com.darthyk.springtest.service.UserService;
 
 public class OrderServiceImpl implements OrderService {
 

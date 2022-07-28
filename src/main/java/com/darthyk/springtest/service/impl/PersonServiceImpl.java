@@ -1,9 +1,10 @@
-package com.darthyk.springtest.service;
+package com.darthyk.springtest.service.impl;
 
 import com.darthyk.springtest.dto.PersonDto;
 import com.darthyk.springtest.dto.ShortPersonDto;
 import com.darthyk.springtest.model.Person;
 import com.darthyk.springtest.repository.PersonRepository;
+import com.darthyk.springtest.service.PersonService;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;

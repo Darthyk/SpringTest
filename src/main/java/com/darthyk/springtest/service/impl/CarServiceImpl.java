@@ -1,9 +1,11 @@
-package com.darthyk.springtest.service;
+package com.darthyk.springtest.service.impl;
 
 import com.darthyk.springtest.dto.CarDto;
 import com.darthyk.springtest.model.Car;
 import com.darthyk.springtest.model.User;
 import com.darthyk.springtest.repository.CarRepository;
+import com.darthyk.springtest.service.CarService;
+import com.darthyk.springtest.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class CarServiceImpl implements CarService {

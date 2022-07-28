@@ -1,4 +1,4 @@
-package com.darthyk.springtest.service;
+package com.darthyk.springtest.service.impl;
 
 import com.darthyk.springtest.dto.CarDto;
 import com.darthyk.springtest.dto.DocumentDto;
@@ -8,6 +8,7 @@ import com.darthyk.springtest.model.Car;
 import com.darthyk.springtest.model.Document;
 import com.darthyk.springtest.model.User;
 import com.darthyk.springtest.repository.UserRepository;
+import com.darthyk.springtest.service.UserService;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
